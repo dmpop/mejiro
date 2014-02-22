@@ -19,7 +19,7 @@
 
         <header>
           <h1>Photocrumbs</h1>
-          <h2>Forgetful photo publishing app</h2>
+          <h2>Forgetful photo publishing web app</h2>
         </header>
 
         <section id="downloads" class="clearfix">
@@ -34,22 +34,24 @@
           <h2>
 <a name="about-photocrumbs" class="anchor" href="#about-photocrumbs"><span class="octicon octicon-link"></span></a>About Photocrumbs</h2>
 
-<p>Photocrumbs is a simple single-file PHP app for publishing photos as a chronological stream. The app features expiration functionality. When enabled, it deletes photos that are older than a user-defined number of days.</p>
+<p>Photocrumbs is a forgetful single-file PHP web app for instantly publishing photos as a chronological stream. The app features expiration functionality. When enabled, it deletes photos older than a user-defined number of days -- hence the <em>forgetful</em> moniker.</p>
 
 <h2>
 <a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h2>
 
 <ul>
 <li>
-<strong>Simplicity</strong> The entire app consists of a single PHP file (plus a fav icon). Photocrumbs requires no installation, and it can be deployed on any web server with PHP and the GD library.</li>
+<strong>Simplicity</strong> The entire app consists of a single PHP file (plus a fav icon). Photocrumbs requires no installation, and it can be deployed on any web server with PHP5 and the GD library.</li>
 <li>
 <strong>Instant and easy photo publishing</strong> Upload photos, and Photocrumbs does the rest.</li>
 <li>
 <strong>Automatic thumbnail generation</strong> Photocrumbs automatically generates thumbnails for faster preview.</li>
 <li>
-<strong>Basic EXIF data</strong> The app extract and displays basic EXIF info for each photo, including aperture, shutter speed, ISO, and timestamp.</li>
+<strong>Expiration functionality</strong> The app can automatically delete photos older than a specific number of days.</li>
 <li>
-<strong>Optional description</strong> You can add a description to each photo by creating an accompanying <em>.php</em> file. The app can also read and display description from the photo's <em>UserComment</em> EXIF field.</li>
+<strong>Basic EXIF data</strong> The app extracts and displays basic EXIF info for each photo, including aperture, shutter speed, ISO, and timestamp.</li>
+<li>
+<strong>Optional description</strong> You can add a description to each photo by creating an accompanying <em>.php</em> file. The app can also read and display descriptions from the photo's <em>UserComment</em> EXIF field.</li>
 </ul><h2>
 <a name="requirements" class="anchor" href="#requirements"><span class="octicon octicon-link"></span></a>Requirements</h2>
 
@@ -62,7 +64,7 @@
 <ol>
 <li>Install the required packages. On Debian and Ubuntu, this can be done by running the following command as root: <code>apt-get install apache2 php5 php5-gd git</code>
 </li>
-<li>In the terminal, switch to the root directory of the server (e.g., <em>/var/www</em>) and use the <code>git clone git@github.com:dmpop/photocrumbs.git</code> command to fetch the latest source code. Alternatively, you can download the ZIP archive an extract it into the document root of the server.</li>
+<li>In the terminal, switch to the root directory of the server (e.g., <em>/var/www</em>) and use the <code>git clone git@github.com:dmpop/photocrumbs.git</code> command to fetch the latest source code. Alternatively, you can download the ZIP archive and extract it into the document root of the server.</li>
 <li>Open the <em>index.php</em> file in a text editor and edit settings. This step is optional.</li>
 <li>Put photos into the <em>photos</em> directory (<em>.jpg</em> file only).</li>
 <li>Point the browser to <em><a href="http://127.0.0.1/photocrumbs/">http://127.0.0.1/photocrumbs/</a></em> (replace <em>127.0.0.1</em> with the actual IP address or domain name of your server).</li>
