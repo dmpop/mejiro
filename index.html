@@ -31,7 +31,7 @@
         <h2>
 <a name="about-photocrumbs" class="anchor" href="#about-photocrumbs"><span class="octicon octicon-link"></span></a>About Photocrumbs</h2>
 
-<p>Photocrumbs is a forgetful single-file PHP web app for instantly publishing photos as a chronological stream. The app features expiration functionality. When enabled, it deletes photos older than a user-defined number of days -- hence the <em>forgetful</em> moniker.</p>
+<p>Photocrumbs is a forgetful single-file PHP web app for instant photo publishing. The app features expiration functionality. When enabled, it deletes photos older than a user-defined number of days -- hence the <em>forgetful</em> moniker.</p>
 
 <h2>
 <a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h2>
@@ -68,10 +68,6 @@
 </ol><p>You can add descriptions to photos by creating accompanying <em>.php</em> files. For example, to add a description to the <em>F994362-R1-14-15.jpg</em> photo, create the <em>F994362-R1-14-15.php</em> file containing a short text. You can use HTML markup for formatting the text.</p>
 
 <p>To enable the expiration feature, change the <em>$expire = false;</em> line in the <em>index.php</em> script to <em>$expire = true;</em> and specify the desired expiration period by modifying the <em>$days</em> variable.</p>
-
-<p>You can use Photocrumbs to display a single photo by specifying the <em>id</em> parameter in the URL. For example, the <a href="http://127.0.0.1/photocrumbs/index.php?id=photos/F994362-R1-14-15.jpg">http://127.0.0.1/photocrumbs/index.php?id=photos/F994362-R1-14-15.jpg</a> URL shows the <em>F994362-R1-14-15.jpg</em> photo.</p>
-
-<p>To view thumbnails of all photos, add the <em>?view=1</em> parameter to the URL as follows: <a href="http://127.0.0.1/photocrumbs/index.php?view=1">http://127.0.0.1/photocrumbs/index.php?view=1</a></p>
 
 <h2>
 <a name="demo" class="anchor" href="#demo"><span class="octicon octicon-link"></span></a>Demo</h2>
