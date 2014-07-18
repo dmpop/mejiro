@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Photocrumbs by dmpop</title>
+    <title>Mejiro by dmpop</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
@@ -15,34 +15,34 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>Photocrumbs</h1>
-        <p>Forgetful photo web app</p>
+        <h1>Mejiro</h1>
+        <p>Pastebin for your photos</p>
 
-        <p class="view"><a href="https://github.com/dmpop/photocrumbs">View the Project on GitHub <small>dmpop/photocrumbs</small></a></p>
+        <p class="view"><a href="https://github.com/dmpop/mejiro">View the Project on GitHub <small>dmpop/mejiro</small></a></p>
 
 
         <ul>
-          <li><a href="https://github.com/dmpop/photocrumbs/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/dmpop/photocrumbs/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/dmpop/photocrumbs">View On <strong>GitHub</strong></a></li>
+          <li><a href="https://github.com/dmpop/mejiro/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/dmpop/mejiro/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/dmpop/mejiro">View On <strong>GitHub</strong></a></li>
         </ul>
       </header>
       <section>
         <h2>
-<a name="about-photocrumbs" class="anchor" href="#about-photocrumbs"><span class="octicon octicon-link"></span></a>About Photocrumbs</h2>
+<a name="about-mejiro" class="anchor" href="#about-mejiro"><span class="octicon octicon-link"></span></a>About Mejiro</h2>
 
-<p>Photocrumbs is a forgetful single-file PHP web app for instant photo publishing. The app features expiration functionality. When enabled, it deletes photos older than a user-defined number of days -- hence the <em>forgetful</em> moniker.</p>
+<p>Mejiro is a forgetful single-file PHP web app for instant photo publishing. The app features expiration functionality. When enabled, it deletes photos older than a user-defined number of days -- hence the <em>forgetful</em> moniker.</p>
 
 <h2>
 <a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h2>
 
 <ul>
 <li>
-<strong>Simplicity</strong> The entire app consists of a single PHP file (plus a fav icon). Photocrumbs requires no installation, and it can be deployed on any web server with PHP5 and the GD library.</li>
+<strong>Simplicity</strong> The entire app consists of a single PHP file (plus a fav icon). Mejiro requires no installation, and it can be deployed on any web server with PHP5 and the GD library.</li>
 <li>
-<strong>Instant and easy photo publishing</strong> Upload photos, and Photocrumbs does the rest.</li>
+<strong>Instant and easy photo publishing</strong> Upload photos, and Mejiro does the rest.</li>
 <li>
-<strong>Automatic thumbnail generation</strong> Photocrumbs automatically generates thumbnails for faster preview.</li>
+<strong>Automatic thumbnail generation</strong> Mejiro automatically generates thumbnails for faster preview.</li>
 <li>
 <strong>Expiration functionality</strong> The app can automatically delete photos older than a specific number of days.</li>
 <li>
@@ -61,18 +61,18 @@
 <ol>
 <li>Install the required packages. On Debian and Ubuntu, this can be done by running the following command as root: <code>apt-get install apache2 php5 php5-gd git</code>
 </li>
-<li>In the terminal, switch to the root directory of the server (e.g., <em>/var/www</em>) and use the <code>git clone git clone https://github.com/dmpop/photocrumbs.git</code> command to fetch the latest source code. Alternatively, you can download the ZIP archive and extract it into the document root of the server.</li>
+<li>In the terminal, switch to the root directory of the server (e.g., <em>/var/www</em>) and use the <code>git clone git clone https://github.com/dmpop/mejiro.git</code> command to fetch the latest source code. Alternatively, you can download the ZIP archive and extract it into the document root of the server.</li>
 <li>Open the <em>index.php</em> file in a text editor and edit settings. This step is optional.</li>
 <li>Put photos into the <em>photos</em> directory (<em>.jpg</em>, <em>jpeg</em>, <em>.JPG</em>, and <em>.JPEG</em> files only).</li>
-<li>Point the browser to <em><a href="http://127.0.0.1/photocrumbs/">http://127.0.0.1/photocrumbs/</a></em> (replace <em>127.0.0.1</em> with the actual IP address or domain name of your server).</li>
-</ol><p>You can add descriptions to photos by creating accompanying <em>.php</em> files. For example, to add a description to the <em>F994362-R1-14-15.jpg</em> photo, create the <em>F994362-R1-14-15.php</em> file containing a short text. You can use HTML markup for formatting the text.</p>
+<li>Point the browser to <em><a href="http://127.0.0.1/mejiro/">http://127.0.0.1/mejiro/</a></em> (replace <em>127.0.0.1</em> with the actual IP address or domain name of your server).</li>
+</ol><p>You can add descriptions to photos by creating accompanying <em>.txt</em> files. For example, to add a description to the <em>F994362-R1-14-15.jpg</em> photo, create the <em>F994362-R1-14-15.txt</em> file containing a short text. You can use HTML markup for formatting the text.</p>
 
 <p>To enable the expiration feature, change the <em>$expire = false;</em> line in the <em>index.php</em> script to <em>$expire = true;</em> and specify the desired expiration period by modifying the <em>$days</em> variable.</p>
 
 <h2>
 <a name="demo" class="anchor" href="#demo"><span class="octicon octicon-link"></span></a>Demo</h2>
 
-<p>A <a href="http://dmpop.homelinux.com/photocrumbs/">Photocrumbs demo</a> is available for your viewing pleasure.</p>
+<p>A <a href="http://dmpop.dhcp.io/mejiro/">Mejiro demo</a> is available for your viewing pleasure.</p>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/dmpop">dmpop</a></p>
