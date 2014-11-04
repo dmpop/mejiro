@@ -33,6 +33,8 @@
 
 <p>Mejiro is a forgetful single-file PHP web app for instant photo publishing. The app features expiration functionality. When enabled, it deletes photos older than a user-defined number of days -- hence the <em>forgetful</em> moniker.</p>
 
+<p><img src="mejiro.png" alt="Mejiro"></p>
+
 <h2>
 <a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h2>
 
@@ -55,13 +57,17 @@
 <strong>Optional description text</strong> You can add a description to each photo by creating an accompanying <em>.txt</em> file. The app can also read and display descriptions from the photo's <em>UserComment</em> EXIF field.</li>
 <li>
 <strong>Automatic language detection</strong> Mejiro automatically detects the browser language and picks the description text file with the appropriate language prefix.</li>
-</ul><h2>
+</ul>
+
+<h2>
 <a name="requirements" class="anchor" href="#requirements"><span class="octicon octicon-link"></span></a>Requirements</h2>
 
 <ul>
 <li>A web server with PHP5 and the GD library. (Tested with Apache and lighttpd)</li>
 <li>Git (optional)</li>
-</ul><h2>
+</ul>
+
+<h2>
 <a name="installation-and-usage" class="anchor" href="#installation-and-usage"><span class="octicon octicon-link"></span></a>Installation and Usage</h2>
 
 <ol>
@@ -71,7 +77,9 @@
 <li>Open the <em>index.php</em> file in a text editor and edit settings. This step is optional.</li>
 <li>Put photos into the <em>photos</em> directory (<em>.jpg</em>, <em>jpeg</em>, <em>.JPG</em>, and <em>.JPEG</em> files only).</li>
 <li>Point the browser to <em><a href="http://127.0.0.1/mejiro/">http://127.0.0.1/mejiro/</a></em> (replace <em>127.0.0.1</em> with the actual IP address or domain name of your server).</li>
-</ol><p>You can add descriptions to photos by creating accompanying <em>.txt</em> files. For example, to add a description to the <em>F994362-R1-14-15.jpg</em> photo, create the <em>F994362-R1-14-15.txt</em> file containing a short text. You can use HTML markup for formatting the text. To add description files in other languages, use the appropriate language prefix as follows: <em>de-F994362-R1-14-15.txt</em> (for German), <em>ja-F994362-R1-14-15.txt</em> (for Japanese), etc.</p>
+</ol>
+
+<p>You can add descriptions to photos by creating accompanying <em>.txt</em> files. For example, to add a description to the <em>F994362-R1-14-15.jpg</em> photo, create the <em>F994362-R1-14-15.txt</em> file containing a short text. You can use HTML markup for formatting the text. To add description files in other languages, use the appropriate language prefix as follows: <em>de-F994362-R1-14-15.txt</em> (for German), <em>ja-F994362-R1-14-15.txt</em> (for Japanese), etc.</p>
 
 <p>To enable the expiration feature, change the <em>$expire = false;</em> line in the <em>index.php</em> script to <em>$expire = true;</em> and specify the desired expiration period by modifying the <em>$days</em> variable.</p>
 
@@ -79,6 +87,11 @@
 <a name="demo" class="anchor" href="#demo"><span class="octicon octicon-link"></span></a>Demo</h2>
 
 <p>A <a href="http://dmpop.dhcp.io/mejiro/">Mejiro demo</a> is available for your viewing pleasure.</p>
+
+<h2>
+<a name="little-mejiro-book" class="anchor" href="#little-mejiro-book"><span class="octicon octicon-link"></span></a>Little Mejiro Book</h2>
+
+<p>Want to get the most out of Mejiro? Read the <a href="http://dmpop.dhcp.io/#!littlemejirobook.md">Little Mejiro Book</a>.</p>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/dmpop">dmpop</a></p>
