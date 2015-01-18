@@ -29,12 +29,14 @@
       </header>
       <section>
         <h2>
-<a name="about-mejiro" class="anchor" href="#about-mejiro"><span class="octicon octicon-link"></span></a>About Mejiro</h2>
+<a id="about-mejiro" class="anchor" href="#about-mejiro" aria-hidden="true"><span class="octicon octicon-link"></span></a>About Mejiro</h2>
 
 <p>Mejiro is a forgetful single-file PHP web app for instant photo publishing. The app features expiration functionality. When enabled, it deletes photos older than a user-defined number of days -- hence the <em>forgetful</em> moniker.</p>
 
+<p><img src="https://raw.githubusercontent.com/dmpop/mejiro/master/mejiro.png" alt="Mejiro"></p>
+
 <h2>
-<a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h2>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Features</h2>
 
 <ul>
 <li>
@@ -50,15 +52,19 @@
 <li>
 <strong>IPTC keywords</strong> Mejiro parses IPTC metadata and displays keywords assigned to photos.</li>
 <li>
-<strong>Display geographical coordinates on OpenStreetMap</strong> For geotagged photos, you can view their exact locations on OpenStreetMap.</li>
+<strong>Display geographical coordinates on OpenStreetMap or Google Maps</strong> For geotagged photos, you can view their exact locations on OpenStreetMap.</li>
 <li>
 <strong>Optional description text</strong> You can add a description to each photo by creating an accompanying <em>.txt</em> file. The app can also read and display descriptions from the photo's <em>UserComment</em> EXIF field.</li>
 <li>
+<strong>Link to RAW</strong> For each photo in the JPEG format, you can upload the accompanying RAW file, and Mejiro automatically adds a link to it.</li>
+<li>
 <strong>Automatic language detection</strong> Mejiro automatically detects the browser language and picks the description text file with the appropriate language prefix.</li>
+<li>
+<strong>CrazyStat integration</strong> Mejiro supports integration with the <a href="http://en.christosoft.de/CrazyStat">CrazyStat</a> web analytics software.</li>
 </ul>
 
 <h2>
-<a name="requirements" class="anchor" href="#requirements"><span class="octicon octicon-link"></span></a>Requirements</h2>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Requirements</h2>
 
 <ul>
 <li>A web server with PHP5 and the GD library. (Tested with Apache and lighttpd)</li>
@@ -66,7 +72,7 @@
 </ul>
 
 <h2>
-<a name="installation-and-usage" class="anchor" href="#installation-and-usage"><span class="octicon octicon-link"></span></a>Installation and Usage</h2>
+<a id="installation-and-usage" class="anchor" href="#installation-and-usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation and Usage</h2>
 
 <ol>
 <li>Install the required packages. On Debian and Ubuntu, this can be done by running the following command as root: <code>apt-get install apache2 php5 php5-gd git</code>
@@ -82,12 +88,12 @@
 <p>To enable the expiration feature, change the <em>$expire = false;</em> line in the <em>index.php</em> script to <em>$expire = true;</em> and specify the desired expiration period by modifying the <em>$days</em> variable.</p>
 
 <h2>
-<a name="demo" class="anchor" href="#demo"><span class="octicon octicon-link"></span></a>Demo</h2>
+<a id="demo" class="anchor" href="#demo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Demo</h2>
 
 <p>A <a href="http://dmpop.dhcp.io/mejiro/">Mejiro demo</a> is available for your viewing pleasure.</p>
 
 <h2>
-<a name="little-mejiro-book" class="anchor" href="#little-mejiro-book"><span class="octicon octicon-link"></span></a>Little Mejiro Book</h2>
+<a id="little-mejiro-book" class="anchor" href="#little-mejiro-book" aria-hidden="true"><span class="octicon octicon-link"></span></a>Little Mejiro Book</h2>
 
 <p>Want to get the most out of Mejiro? Read the <a href="http://dmpop.dhcp.io/#!littlemejirobook.md">Little Mejiro Book</a>.</p>
       </section>
