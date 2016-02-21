@@ -29,18 +29,20 @@
       </header>
       <section>
         <h2>
-<a id="about-mejiro" class="anchor" href="#about-mejiro" aria-hidden="true"><span class="octicon octicon-link"></span></a>About Mejiro</h2>
+<a id="about-mejiro" class="anchor" href="#about-mejiro" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>About Mejiro</h2>
 
 <p>Mejiro is a forgetful single-file PHP web app for instant photo publishing. The app features expiration functionality. When enabled, it deletes photos older than a user-defined number of days -- hence the <em>forgetful</em> moniker.</p>
 
 <p><img src="https://raw.githubusercontent.com/dmpop/mejiro/master/mejiro.png" alt="Mejiro"></p>
 
 <h2>
-<a id="features" class="anchor" href="#features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Features</h2>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Features</h2>
 
 <ul>
 <li>
 <strong>Simplicity</strong> The entire app consists of a single PHP file (plus a fav icon). Mejiro requires no installation, and it can be deployed on any web server with PHP5 and the GD library.</li>
+<li>
+<strong>Responsive design</strong> Mejiro works well on mobile devices.</li>
 <li>
 <strong>Instant and easy photo publishing</strong> Upload photos, and Mejiro does the rest.</li>
 <li>
@@ -53,6 +55,8 @@
 <strong>IPTC keywords</strong> Mejiro parses IPTC metadata and displays keywords assigned to photos.</li>
 <li>
 <strong>Display geographical coordinates on OpenStreetMap or Google Maps</strong> For geotagged photos, you can view their exact locations on OpenStreetMap.</li>
+<li>
+<strong>Short URLs</strong> Mejiro uses the <a href="http://is.gd/">is.gd</a> service to generate short URLs for easy sharing.</li>
 <li>
 <strong>Optional description text</strong> You can add a description to each photo by creating an accompanying <em>.txt</em> file. The app can also read and display descriptions from the photo's <em>UserComment</em> EXIF field.</li>
 <li>
@@ -68,18 +72,19 @@
 </ul>
 
 <h2>
-<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Requirements</h2>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Requirements</h2>
 
 <ul>
 <li>A web server with PHP5 and the GD library. (Tested with Apache and lighttpd)</li>
+<li>cURL</li>
 <li>Git (optional)</li>
 </ul>
 
 <h2>
-<a id="installation-and-usage" class="anchor" href="#installation-and-usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation and Usage</h2>
+<a id="installation-and-usage" class="anchor" href="#installation-and-usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation and Usage</h2>
 
 <ol>
-<li>Install the required packages. On Debian and Ubuntu, this can be done by running the following command as root: <code>apt-get install apache2 php5 php5-gd git</code>
+<li>Install the required packages. On Debian and Ubuntu, this can be done by running the following command as root: <code>apt-get install apache2 php5 php5-gd curl git</code>
 </li>
 <li>In the terminal, switch to the root directory of the server (e.g., <em>/var/www</em>) and use the <code>git clone https://github.com/dmpop/mejiro.git</code> command as root to fetch the latest source code. Alternatively, you can download the ZIP archive and extract it into the document root of the server.</li>
 <li>Open the <em>index.php</em> file in a text editor and edit settings. This step is optional.</li>
@@ -93,14 +98,19 @@
 <p>To enable the expiration feature, change the <em>$expire = false;</em> line in the <em>index.php</em> script to <em>$expire = true;</em> and specify the desired expiration period by modifying the <em>$days</em> variable.</p>
 
 <h2>
-<a id="demo" class="anchor" href="#demo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Demo</h2>
+<a id="demo" class="anchor" href="#demo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Demo</h2>
 
 <p>A <a href="http://dmpop.dhcp.io/mejiro/">Mejiro demo</a> is available for your viewing pleasure.</p>
 
 <h2>
-<a id="little-mejiro-book" class="anchor" href="#little-mejiro-book" aria-hidden="true"><span class="octicon octicon-link"></span></a>Little Mejiro Book</h2>
+<a id="author" class="anchor" href="#author" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Author</h2>
 
-<p>Want to get the most out of Mejiro? Read the <a href="http://scribblesandsnaps.com/little-mejiro-book/">Little Mejiro Book</a>.</p>
+<p>Dmitri Popov (<a href="mailto:dmpop@linux.com">dmpop@linux.com</a>)</p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h2>
+
+<p>Mejiro is released under the <a href="http://www.gnu.org/licenses/gpl-3.0.en.html">GNU General Public License version 3</a> license.</p>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/dmpop">dmpop</a></p>
